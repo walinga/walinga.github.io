@@ -1,9 +1,23 @@
 body {
-    background-color: powderblue;
+    background-color: black;
 }
 h1 {
     color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+h2 {
+    color: powderblue;
+    font-family: courier;
+    font-size: 160%;
+}
+h3 {
+    color: darkred;
+    font-family: verdana;
+    font-size: 150%;
 }
 p {
     color: red;
+    border: 1px solid powderblue;
+    padding: 30px;
 }
