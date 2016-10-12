@@ -19,6 +19,8 @@ h3 {
     font-size: 150%;
 }
 a {
+    display: block;
+    text-align: center;
     color: powderblue;
     font-family: courier;
     font-size: 160%;
