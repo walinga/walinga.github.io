@@ -5,18 +5,23 @@ h1 {
     text-align: center;
     color: blue;
     font-family: verdana;
-    font-size: 300%;
+    font-size: 600%;
 }
-a {
-    color: powderblue;
-    font-family: courier;
-    font-size: 160%;
+h2 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
 }
 h3 {
     text-align: center;
     color: darkred;
     font-family: verdana;
     font-size: 150%;
+}
+a {
+    color: powderblue;
+    font-family: courier;
+    font-size: 160%;
 }
 a:link {
     color: powderblue;
