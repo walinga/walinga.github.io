@@ -2,6 +2,7 @@ body {
     background-color: black;
 }
 h1 {
+    text-align: center;
     color: blue;
     font-family: verdana;
     font-size: 300%;
@@ -12,6 +13,7 @@ h2 {
     font-size: 160%;
 }
 h3 {
+    text-align: center;
     color: darkred;
     font-family: verdana;
     font-size: 150%;
