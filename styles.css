@@ -7,7 +7,7 @@ h1 {
     font-family: verdana;
     font-size: 300%;
 }
-h2 {
+a {
     color: powderblue;
     font-family: courier;
     font-size: 160%;
@@ -17,6 +17,12 @@ h3 {
     color: darkred;
     font-family: verdana;
     font-size: 150%;
+}
+a:link {
+    color: powderblue;
+}
+a:hover {
+    color: hotpink;
 }
 p {
     color: red;
