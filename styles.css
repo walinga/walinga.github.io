@@ -18,9 +18,13 @@ h3 {
     font-family: impact;
     font-size: 150%;
 }
-a {
-    display: block;
+
+.wrapper {
     text-align: center;
+    width: 100%
+}
+
+a {
     color: powderblue;
     font-family: courier;
     font-size: 160%;
