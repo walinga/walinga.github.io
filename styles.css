@@ -1,41 +1,153 @@
-body {
-    background-color: black;
-}
-h1 {
-    text-align: center;
-    color: blue;
-    font-family: verdana;
-    font-size: 600%;
-}
-h2 {
-    color: blue;
-    font-family: verdana;
-    font-size: 300%;
-}
-h3 {
-    text-align: center;
-    color: blue;
-    font-family: impact;
-    font-size: 150%;
+@font-face {
+  font-family: "Montserrat";
+  src: url(fonts/Montserrat-Light.otf) format("opentype");
+  font-weight: 200;
+  font-style: normal;
 }
 
-.wrapper {
-    text-align: center;
-    width: 100%
+@font-face {
+  font-family: "Montserrat";
+  src: url(fonts/Montserrat-Regular.otf) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: white;
+    border: 0;
+    font: 100%/150% "Montserrat", sans-serif;
+    color: #2f2f2f;
+}
+
+article, section, nav, main, footer {
+    display: block;
+}
+
+h1 {
+    margin: 0;
+    font-size: 225%;
+    line-height: 100%;
+}
+
+h2 {
+    font-size: 225%;
+    margin: 0;
+}
+
+h3 {
+    margin: 0.5em 0 1em 0;
+    font-size: 150%;
+    font-weight: 200;
 }
 
 a {
-    color: powderblue;
-    font-family: courier;
-    font-size: 160%;
+    font-size: 112.5%;
+    color: #555;
+    text-decoration: none;
+    transition: 0.5s color;
 }
-a:link {
-    color: powderblue;
-}
+
 a:hover {
-    color: hotpink;
+    color: #00b2ee;
 }
+
 p {
-    color: blue;
-    font-family: impact;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+main, aside {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: calc(100% - 340px - 6em);
+    padding-right: 3em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+aside {
+    width: 340px;
+    padding: 0 3em; /* 48px */
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.nameplate {
+    margin-top: 12%;
+    position: relative;
+}
+
+.nameplate-title {
+    height: auto;
+}
+
+.fname, .lname {
+    display: block;
+    line-height: 100%;
+}
+
+.fname {
+    margin-bottom: -0.125em;
+}
+
+.lname {
+    font-size: 200%;
+}
+
+.nameplate-subtitle {
+    margin: 0.5em 0 1em 0.125em;
+    font-size: 150%;
+    font-weight: 200;
+}
+
+nav ul {
+    padding-left: 1.5em;
+    list-style: none;
+}
+
+nav li {
+    margin: 0.5em 0;
+}
+
+section {
+    margin: 2.25em auto;
+}
+
+.project-title {
+    margin: 0.5em 0;
+    font-size: 150%;
+    font-weight: 200;
+}
+
+article {
+    padding: 2.25em 0.5em 0 0.5em;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    margin: 2em 0;
+    font-size: 75%;
+    font-weight: 200;
+    line-height: 100%;
 }
