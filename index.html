@@ -4,49 +4,70 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 		<title>Matthew Walinga</title>
-		<link rel="stylesheet" href="styles.css">
+
+		<meta name="title" content="Matthew Walinga">
+		<meta name="og:title" content="Matthew Walinga">
+		<meta name="description" content="I'm a software developer studying Computer Science at the University of Waterloo.">
+		<meta name="og:description" content="I'm a software developer studying Computer Science at the University of Waterloo.">
+		<meta name="keywords" content="matthew,walinga,software,developer,python,scala,go,c,javascript,js,programmer,programming,github,linkedin,hire,university,waterloo,uwaterloo,chess,computer,science">
+
+		<link rel="icon" type="image/png" href="favicon.png">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<aside>
-		<div class="nameplate">
-			<h1 class="nameplate-title">
-				<span class="fname">Matthew</span>
-				<span class="lname">Walinga</span>
-			</h1>
-			<h2 class="nameplate-subtitle">Software Developer</h2>
-		</div>
-
-		<nav>
-			<ul>
-				<li><a href="https://github.com/walinga">Github</a></li>
-				<li><a href="https://www.linkedin.com/in/matthewwalinga">LinkedIn</a></li>
-				<li><a href="/resume.pdf">Resume</a></li>
-			</ul>
-		</nav>
-
-		<footer>
-			<p>A collaborative creation &copy; 2016 with <a href="http://tiffanynwyeung.com">Tiffany Yeung</a> and <a href="http://edwardhdlu.github.io">Edward Lu</a>.</p>
-		</footer>
-		</aside>
+		<header>
+			<section class="nameplate">
+				<h1 class="nameplate-title">
+					<span class="fname">Matthew</span>
+					<span class="lname">Walinga</span>
+				</h1>
+				<h2 class="nameplate-subtitle">Software Developer</h2>
+			</div>
+			<section id="about">
+				<p>Hey, I'm Matthew, a software developer and Computer Science student at the University of Waterloo. When I'm not working on code, you can find me playing chess.</p>
+			</section>
+			<nav>
+				<ul>
+					<li><a href="https://github.com/walinga">Github</a></li>
+					<li><a href="https://www.linkedin.com/in/matthewwalinga">LinkedIn</a></li>
+					<li><a href="resume.pdf">Resume</a></li>
+				</ul>
+			</nav>
+		</header>
 		<main>
 			<section>
 				<h1 class="section-title">Projects</h1>
 				<article class="project">
-					<h2 class="project-title">Chess AI</h2>
-					<p>A complex chess bot that use minimax and alpha-beta pruning to decide on the best move. 
+					<h2 class="project-title">
+						<span>Chess AI</span>
+						<span>&mdash;</span>
+						<a href="https://github.com/walinga/Chess-Game">Github</a>
+					</h2>
+					<p>A complex chess bot that use minimax and alpha-beta pruning to decide on the best move.
 					Written in python, this project took about a month to get working and another month to optimize.
 				    Used a CPU profiler to determine where the program was running slowly.</p>
 				</article>
 				<article class="project">
-					<h2 class="project-title">StreetRep</h2>
+					<h2 class="project-title">
+						<span>StreetRep</span>
+						<span>&mdash;</span>
+						<a href="https://github.com/walinga/hack_the_north_2016_streetrep">Github</a>
+					</h2>
 					<p>A social network that allows users to post status updates at specific locations. Based on yik-yak, the site gives users a certain amount of cred based on upvotes and downvotes. This project was built at Hack the North 2016 using node.js, firebase, and bootstrap.</p>
 				</article>
 				<article class="project">
-					<h2 class="project-title">Medicus</h2>
+					<h2 class="project-title">
+						<span>Medicus</span>
+						<span>&mdash;</span>
+						<a href="https://github.com/walinga/Medicus">Github</a></h2>
 					<p>A doctor-patient communication website designed for accesibility and resuability. Incorporates machine learning to match each patient with the ideal doctor. Made at ArchHacks 2016.</p>
 				</article>
 			</section>
 		</main>
+		<footer>
+			<p>This site was a collaborative effort &copy; 2016 by <a href="http://tiffanynwyeung.com">Tiffany Yeung</a>, featuring <a href="http://edwardhdlu.github.io">Edward Lu</a>.</p>
+		</footer>
 	</body>
 </html>
