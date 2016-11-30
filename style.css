@@ -69,7 +69,7 @@ p {
 /* LAYOUT */
 
 main, header {
-    width: calc(100% - 2em);
+    width: 100%;
     height: auto;
     padding: 0 1em;
     margin: 0;
@@ -95,7 +95,7 @@ section {
 }
 
 footer {
-    padding: 0 1em;
+    padding: 0;
     margin: 2em 0;
     position: relative;
     font-size: 90%;
@@ -104,7 +104,6 @@ footer {
 
 @media all and (min-width: 600px) {
     main, header {
-        width: calc(100% - 6em);
         padding: 0 3em;
     }
 }
@@ -112,9 +111,10 @@ footer {
 @media all and (min-width: 768px) {
     header {
         max-width: 340px;
-        position: fixed;
+        position: absolute;
         left: 0;
         top: 0;
+        overflow-y: auto;
     }
 
     main {
@@ -131,11 +131,8 @@ footer {
     }
 
     footer {
-        width: 340px;
-        padding-left: 3em;
-        position: fixed;
-        left: 0;
-        bottom: 0;
+        padding: 0 0.5em;
+        margin: 5em 0 2.5em 0;
     }
 }
 
@@ -143,6 +140,20 @@ footer {
     main {
         width: calc(100% - 340px - 6em);
         padding-left: 3em;
+    }
+}
+
+@media all and (min-width: 768px) and (min-height: 600px) {
+    header {
+        position: fixed;
+    }
+
+    footer {
+        width: 340px;
+        padding-left: 3em;
+        position: fixed;
+        bottom: 0;
+        left: 0;
     }
 }
 
