@@ -31,25 +31,14 @@ html, body {
   color: #2f2f2f;
 }
 
-article, section, nav, main, footer {
+article, section, nav, main {
   display: block;
 }
 
 h1 {
   margin: 0;
-  font-size: 225%;
+  font-size: 100%;
   line-height: 100%;
-}
-
-h2 {
-  font-size: 225%;
-  margin: 0;
-}
-
-h3 {
-  margin: 0.5em 0 1em 0;
-  font-size: 150%;
-  font-weight: 200;
 }
 
 a {
@@ -64,6 +53,13 @@ a:hover {
 p {
   font-weight: 200;
   font-size: 14px;
+}
+
+hr {
+  border: none;
+  background-color: #C4C4C4;
+  height: 0.5px;
+  margin: 1em 0;
 }
 
 /* LAYOUT */
@@ -90,18 +86,6 @@ section {
   margin: 5em auto;
 }
 
-#about {
-  margin: 2em auto;
-}
-
-footer {
-  padding: 0;
-  margin: 2em 0;
-  position: relative;
-  font-size: 90%;
-  font-weight: 200;
-}
-
 @media all and (min-width: 600px) {
   main, header {
     padding: 0 3em;
@@ -110,11 +94,12 @@ footer {
 
 @media all and (min-width: 768px) {
   header {
-    max-width: 340px;
+    max-width: calc(340px + 3em);
     position: absolute;
     left: 0;
-    top: 0;
+    top: 115px;
     overflow-y: auto;
+    text-align: center;
   }
 
   main {
@@ -122,79 +107,88 @@ footer {
     padding-left: 0;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 115px;
     overflow-y: auto;
   }
 
+  header .sidebar-container {
+    margin-left: 3em;
+  }
+
   section {
-    margin: 2.25em auto;
+    margin: 2.25em auto 5em auto;
   }
 
-  footer {
-    padding: 0 0.5em;
-    margin: 5em 0 2.5em 0;
+  section:last-child {
+    margin-bottom: 2.25em;
   }
 }
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 1200px) {
   main {
-    width: calc(100% - 340px - 6em);
+    width: calc(100% - 580px - 200px);
     padding-left: 3em;
+    margin-right: calc(200px - 3em);
+  }
+  header {
+    max-width: 580px;
+  }
+  header .sidebar-container {
+    margin-left: 200px;
   }
 }
 
-@media all and (min-width: 768px) and (min-height: 600px) {
+@media all and (min-width: 768px) and (min-height: 500px) {
   header {
     position: fixed;
   }
-
-  footer {
-    width: 340px;
-    padding-left: 3em;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+  main .top-mock {
+    display: block;
   }
 }
 
-/* HEADER */
+/* SIDEBAR */
 
-.nameplate {
-  margin: 5% 0 0 0;
+.sidebar-container {
   position: relative;
+  width: 270px;
+  height: 400px;
+  margin: 0 auto;
 }
 
-.nameplate-title {
-  height: auto;
+.square {
+  position: absolute;
+  height: 228px;
+  width: 228px;
+  background-color: #EAF3F4;
+  margin-left: -50px;
 }
 
-.fname, .lname {
-  display: block;
-  line-height: 100%;
+.circle {
+  position: absolute;
+  height: 270px;
+  width: 270px;
+  background-color: #555;
+  border-radius: 50%;
+  border: 10px solid white;
+  margin-top: 35px;
+  background-image: url('Me.jpg');
+  background-position: center;
+  background-size: 300px;
 }
 
-.fname {
-  margin-bottom: -0.125em;
-}
-
-.lname {
-  font-size: 200%;
-}
-
-.nameplate-subtitle {
-  width: 100%;
-  margin: 0.5em 0 1em 0.125em;
-  font-size: 150%;
-  font-weight: 200;
-}
-
-@media all and (min-width: 768px) {
-  .nameplate {
-    margin-top: 12.5%;
-  }
+li a:hover {
+  opacity: 0.3;
 }
 
 /* NAVIGATION */
+
+nav {
+  position: absolute;
+  top: 300px;
+  width: 100%;
+  text-align: center;
+}
 
 nav ul {
   padding: 0;
@@ -206,32 +200,35 @@ nav li {
   display: inline-block;
 }
 
-@media (min-width: 768px) {
-  nav li {
-    margin: 0.5em 0;
-    display: block;
-  }
+article a:before {
+  content: '';
+  width: 0.75em;
+  height: 2px;
+  margin: 0 0.5em 1px 0;
+  display: inline-block;
+  vertical-align: middle;
+  background: #555;
+  transition: 0.25s width, background;
+}
 
-  nav a:before {
-    content: '';
-    width: 0.75em;
-    height: 2px;
-    margin: 0 0.5em 1px 0;
-    display: inline-block;
-    vertical-align: middle;
-    background: #555;
-    transition: 0.25s width, background;
-  }
-
-  nav a:hover:before {
-    content: '';
-    width: 1.5em;
-    background: #00b2ee;
-    transition: 0.25s width, background;
-  }
+article a:hover:before {
+  content: '';
+  width: 1.5em;
+  background: #00b2ee;
+  transition: 0.25s width, background;
 }
 
 /* PROJECTS */
+
+.top-mock {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  height: 115px;
+  width: 100%;
+  background-color: white;
+}
 
 .project-title {
   margin: 0.5em 0;
@@ -240,5 +237,14 @@ nav li {
 }
 
 article {
-  padding: 2.25em 0.5em 0 0;
+  padding: 0 0.5em 2.25em 0;
+}
+
+article:last-child {
+  padding-bottom: 0;
+}
+
+.footer-rule {
+  margin-top: 40px;
+  margin-bottom: 45px;
 }

@@ -18,69 +18,63 @@
 	</head>
 	<body>
 		<header>
-			<section class="nameplate">
-				<h1 class="nameplate-title">
-					<span class="fname">Matthew</span>
-					<span class="lname">Walinga</span>
-				</h1>
-				<h2 class="nameplate-subtitle">Software Developer</h2>
+			<div class="sidebar-container">
+				<div class="square"></div>
+				<div class="circle"></div>
+				<nav>
+					<ul>
+						<li><a href="https://github.com/walinga" target = "_blank"><img src="icons/Github-icon.svg" alt="Github"></a></li>
+						<li><a href="https://www.linkedin.com/in/matthewwalinga" target = "_blank"><img src="icons/LinkedIn-icon.svg" alt="LinkedIn"></a></li>
+						<li><a href="mailto:matthew.walinga@gmail.com"><img src="icons/Mail-icon.svg" alt="Email me"></a></li>
+					</ul>
+				</nav>
 			</div>
-			<section id="about">
-				<p>Hey, I'm Matthew! I'm a CS student at the University of Waterloo. In my free time I enjoy building cool projects, competing in chess competitions and playing the trumpet in concert band. Let's chat!</p>
-			</section>
-			<nav>
-				<ul>
-					<li><a href="mailto:matthew.walinga@gmail.com">Email me</a></li>
-					<li><a href="https://github.com/walinga" target = "_blank">Github</a></li>
-					<li><a href="https://www.linkedin.com/in/matthewwalinga" target = "_blank">LinkedIn</a></li>
-					<li><a href="resume.pdf" target = "_blank">Resume</a></li>
-				</ul>
-			</nav>
 		</header>
 		<main>
+			<div class="top-mock"></div>
 			<section>
-				<h1 class="section-title">Projects</h1>
+				<h1>Matthew Walinga | Software Developer</h1>
+				<hr>
+				<p>Hey, I'm Matthew! I'm a CS student at the University of Waterloo. In my free time I enjoy building cool projects, competing in chess competitions and playing the trumpet in concert band. Let's chat!</p>
+			</section>
+			<section>
+				<h1>A few of my projects</h1>
+				<hr>
 				<article class="project">
-					<h2 class="project-title">Non-deterministic Programming Language</h2>
 					<div class="project-desc">
-						<span class="project-name">"Double U"</span> &mdash; <a href="https://github.com/walinga/Double-U">Github</a> &mdash;
+						<span class="project-name">Double U </span><a href="https://github.com/walinga/Double-U">Github</a>
 						<a href="https://repl.it/@MatthewWalinga/Double-U" target = "_blank">Try it Online</a>
 
 					</div>
-					<p>A complete programming language written in Ruby which allows the user to perform various statistical operations on large data sets. The language is command-based and includes a fully-working REPL for user convenience. Most of the commands have some component of randomization, which allows for a unique experience compared to other programming languages.</p>
+					<p>A non-deterministic programming language written in Ruby which allows the user to perform various statistical operations on large data sets. The language is command-based and includes a fully-working REPL for user convenience. Most of the commands have some component of randomization, which allows for a unique experience compared to other programming languages.</p>
 				</article>
 				<article class="project">
-					<h2 class="project-title">Chess AI</h2>
 					<div class="project-desc">
-						<span class="project-name">"Shallow Blue"</span> &mdash; <a href="https://github.com/walinga/Chess-Game">Github</a>
+						<span class="project-name">Chess AI </span><a href="https://github.com/walinga/Chess-Game">Github</a>
 					</div>
 					<p>A complex chess bot that uses minimax and alpha-beta pruning to decide on the best move. Written from scratch in python, this bot uses chess-based heuristics to augment the minimax backbone. The program can beat almost any casual player using the default settings. The UI features a captured-piece visual, as well as the ability to undo played moves.</p>
 				</article>
 				<article class="project">
-					<h2 class="project-title">Literacy Web App</h2>
 					<div class="project-desc">
-						<span class="project-name">"ReadAR"</span> &mdash; <a href="https://github.com/suoken/readAR">Github</a>
+						<span class="project-name">ReadAR </span><a href="https://github.com/suoken/readAR">Github</a>
 					</div>
 					<p>A HackHarvard project which is designed to help children learn to read. The app provides the user with a story to read, and using Google's speech-to-text technology, it determines if the child is reading the text correctly. An AR component is also provided, which displays related face filters (eg. A dragon, a princess) to make the experience fun for children.</p>
 				</article>
 				<article class="project">
-					<h2 class="project-title">Tetris Game</h2>
 					<div class="project-desc">
-						<span class="project-name">"Quadris"</span> &mdash; <a href="https://github.com/walinga/Quadris">Github</a>
+						<span class="project-name">Quadris </span><a href="https://github.com/walinga/Quadris">Github</a>
 					</div>
 					<p>A Tetris-inspired game with the aim of clearing as many rows as possible. Built using C++ by me and two other friends, the game features a hint and an auto-saved high score. There are also 4 levels of increasing difficulty. It varies from classic Tetris due to the command-based gameplay, which allows the user to queue up several moves at once.</p>
 				</article>
 				<article class="project">
-					<h2 class="project-title">Automated Rap Assistant</h2>
 					<div class="project-desc">
-						<span class="project-name">"Rapatronics"</span> &mdash; <a href="https://github.com/walinga/rapp">Github</a>
+						<span class="project-name">Rapatronics </span><a href="https://github.com/walinga/rapp">Github</a>
 					</div>
 					<p>An Android app that suggests rhyming lines based on voice input from the user. The backend uses Google speech-to-text technology, as well as various natural language processing APIs. This app was a contender for QHacks 2017 and was made with the help of three other people.</p>
+					<hr class="footer-rule">
+					<h1>Thanks for dropping by!</h1>
 				</article>
 			</section>
-			<footer>
-				<p>&copy; 2016 &mdash; 2018 Matthew Walinga. Theme by <a href="http://tiffanynwyeung.com">Tiffany Yeung</a> and <a href="http://edwardhdlu.github.io">Edward Lu</a>.</p>
-			</footer>
 		</main>
 	</body>
 </html>
