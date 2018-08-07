@@ -146,6 +146,7 @@ section {
   position: relative;
   width: 270px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .shape-container {
@@ -186,11 +187,6 @@ li a:hover {
 }
 
 /* NAVIGATION */
-
-nav {
-  width: 100%;
-  text-align: center;
-}
 
 nav ul {
   padding: 0;
