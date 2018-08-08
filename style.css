@@ -198,6 +198,10 @@ nav li {
   display: inline-block;
 }
 
+nav li:last-child {
+  margin: 0;
+}
+
 article a:before {
   content: '';
   width: 0.75em;
@@ -228,6 +232,11 @@ article a:hover:before {
   background-color: white;
 }
 
+.inline-link {
+  text-decoration: none;
+  font-weight: 700;
+}
+
 .project-title {
   margin: 0.5em 0;
   font-size: 150%;
@@ -238,11 +247,7 @@ article {
   padding: 0 0.5em 2.25em 0;
 }
 
-article:last-child {
-  padding-bottom: 0;
-}
-
 .footer-rule {
-  margin-top: 2.5em;
+  margin-top: 0;
   margin-bottom: 2.8em;
 }
