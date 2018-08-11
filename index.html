@@ -30,8 +30,9 @@
 					<ul>
 						<li><a href="https://github.com/walinga" target="_blank"><img src="icons/Github-icon.svg" alt="Github"></a></li>
 						<li><a href="https://www.linkedin.com/in/matthewwalinga" target="_blank"><img src="icons/LinkedIn-icon.svg" alt="LinkedIn"></a></li>
-						<li><a href="mailto:matthew.walinga@gmail.com"><img src="icons/Mail-icon.svg" alt="Email me"></a></li>
+						<li><a id="email-me" data-clipboard-text="matthew.walinga@gmail.com"><img src="icons/Mail-icon.svg" alt="Email me"></a></li>
 					</ul>
+					<span id="copied-prompt">Copied!</span>
 				</nav>
 			</div>
 		</header>
@@ -53,7 +54,7 @@
 					🍺 &nbsp;Know how to say “I don’t want beer” in Mandarin</p>
 			</section>
 			<section>
-				<h2>Stuff I've worked on</h2>
+				<h2>What I've been working on</h2>
 				<hr>
 				<article class="project">
 					<div class="project-desc">
@@ -70,7 +71,7 @@
 				</article>
 				<article class="project">
 					<div class="project-desc">
-						<span class="project-name">♟️ Chess bot </span><a href="https://github.com/walinga/Chess-Game" target="_blank">Github</a>
+						<span class="project-name">🏁 Chess bot </span><a href="https://github.com/walinga/Chess-Game" target="_blank">Github</a>
 					</div>
 					<p>A sophisticated chess program that uses <b>minimax</b> and <b>alpha-beta pruning</b> to decide on the best move. <b>Written from scratch in python</b>, this bot uses chess-based heuristics to augment the minimax backbone. The program can beat almost any casual player using the default settings. The UI features a captured-piece visual, as well as the ability to undo played moves.</p>
 				</article>
@@ -87,8 +88,27 @@
 					<p>A Tetris game built using <b>C++</b> by me and two friends. The game features a hint and an auto-saved high score. There are 4 levels of increasing difficulty, varying from beginner to insanely difficult.</p>
 				</article>
 				<hr class="footer-rule">
-				<h2>Thanks for dropping by!</h2>
+				<div class="footer">
+					<h2 class="footer-title">Thanks for dropping by!</h2>
+					<p class="footer-email">matthew.walinga@gmail.com</p>
+				</div>
 			</section>
 		</main>
+
+		<script src="./node_modules/clipboard/dist/clipboard.min.js"></script>
+		<script>
+			function hideCopyPrompt() {
+				document.getElementById('copied-prompt').style.display = 'none';
+			}
+
+	    var clipboard = new ClipboardJS('#email-me');
+	    clipboard.on('success', function(e) {
+	        document.getElementById('copied-prompt').style.display = 'block';
+					setTimeout(hideCopyPrompt, 2000);
+	    });
+	    clipboard.on('error', function(e) {
+	        console.warn(e);
+	    });
+    </script>
 	</body>
 </html>

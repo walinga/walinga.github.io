@@ -110,10 +110,6 @@ section {
   section {
     margin: 2.25em auto 5em auto;
   }
-
-  section:last-child {
-    margin-bottom: 2.25em;
-  }
 }
 
 @media all and (min-width: 1200px) {
@@ -190,6 +186,7 @@ li a:hover {
 nav ul {
   padding: 0;
   list-style: none;
+  margin-bottom: 0;
 }
 
 nav li {
@@ -199,6 +196,11 @@ nav li {
 
 nav li:last-child {
   margin: 0;
+}
+
+#copied-prompt {
+  margin-left: 105px;
+  display: none;
 }
 
 article a:before {
@@ -249,4 +251,29 @@ article {
 .footer-rule {
   margin-top: 0;
   margin-bottom: 2.8em;
+}
+
+.footer {
+  height: 50px;
+  width: 100%;
+}
+
+.footer-title {
+  width: 200px;
+}
+
+.footer-email {
+  color: #999999;
+}
+
+@media all and (min-width: 500px) and (max-width: 768px),
+  all and (min-width: 860px) and (max-width: 1200px), all and (min-width: 1300px) {
+  .footer-title {
+    float: left;
+  }
+
+  .footer-email {
+    float: right;
+    margin: 0;
+  }
 }
