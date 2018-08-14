@@ -171,6 +171,22 @@ section {
   background-size: 300px;
 }
 
+.pizza {
+  position: absolute;
+  top: -13px;
+  left: -1px;
+  height: 270px;
+  width: 270px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.pizza:hover {
+  opacity: 1;
+}
+
 .job-title {
   font-weight: 400;
   margin-top: 0.75em;
