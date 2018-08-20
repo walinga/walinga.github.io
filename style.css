@@ -219,7 +219,7 @@ nav li:last-child {
   display: none;
 }
 
-article a:before {
+.project-desc a:before {
   content: '';
   width: 0.75em;
   height: 2px;
@@ -230,7 +230,7 @@ article a:before {
   transition: 0.25s width, background;
 }
 
-article a:hover:before {
+.project-desc a:hover:before {
   content: '';
   width: 1.5em;
   background: #00b2ee;
