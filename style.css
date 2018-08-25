@@ -37,6 +37,7 @@ h2 {
 a {
   color: #555;
   transition: 0.25s color;
+  cursor: pointer;
 }
 
 a:hover {
@@ -194,7 +195,8 @@ section {
 }
 
 li a:hover {
-  opacity: 0.3;
+  /* CSS Hack to mimic an SVG fill of #00b2ff */
+  filter: invert(.5) sepia(1) saturate(10) hue-rotate(171deg);
 }
 
 /* NAVIGATION */
