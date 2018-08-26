@@ -194,9 +194,12 @@ section {
   margin-bottom: 1.25em;
 }
 
-li a:hover {
-  /* CSS Hack to mimic an SVG fill of #00b2ff */
-  filter: invert(.5) sepia(1) saturate(10) hue-rotate(171deg);
+#innerSVG {
+  transition: 0.25s fill;
+}
+
+svg:hover #innerSVG {
+  fill: #00b2ee;
 }
 
 /* NAVIGATION */
