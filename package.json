@@ -1,0 +1,23 @@
+{
+  "name": "walinga.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio site",
+  "main": "my-clipboard.js",
+  "dependencies": {
+    "clipboard": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo 'hello world'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walinga/walinga.github.io.git"
+  },
+  "author": "walinga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walinga/walinga.github.io/issues"
+  },
+  "homepage": "https://github.com/walinga/walinga.github.io#readme"
+}

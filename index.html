@@ -140,19 +140,6 @@
 		</main>
 
 		<script src="./node_modules/clipboard/dist/clipboard.min.js"></script>
-		<script>
-			function hideCopyPrompt() {
-				document.getElementById('copied-prompt').style.display = 'none';
-			}
-
-	    var clipboard = new ClipboardJS('#email-me');
-	    clipboard.on('success', function(e) {
-	        document.getElementById('copied-prompt').style.display = 'block';
-					setTimeout(hideCopyPrompt, 2000);
-	    });
-	    clipboard.on('error', function(e) {
-	        console.warn(e);
-	    });
-    </script>
+		<script src="./my-clipboard.js"></script>
 	</body>
 </html>
