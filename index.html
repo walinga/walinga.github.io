@@ -1,136 +1,542 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126555252-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Walinga - Filmographer | Toronto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		  gtag('config', 'UA-126555252-1');
-		</script>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            overflow-x: hidden;
+        }
 
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-		<title>Matthew Walinga</title>
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 15, 35, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
 
-		<meta name="title" content="Matthew Walinga">
-		<meta name="og:title" content="Matthew Walinga">
-		<meta name="description" content="I'm a software engineer currently based in New York.">
-		<meta name="og:description" content="I'm a software engineer currently based in New York.">
-		<meta name="keywords" content="matthew,walinga,software,developer,python,scala,go,c,javascript,js,programmer,programming,github,linkedin,hire,university,waterloo,uwaterloo,chess,computer,science">
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
-	</head>
-	<body>
-		<header>
-			<div class="sidebar-container">
-				<h1>Matthew Walinga</h1>
-				<h2 class="job-title">Software Engineer</h2>
-				<nav>
-					<ul>
-						<li><a href="https://github.com/walinga" target="_blank" aria-label=Github"">
-							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path id="innerSVG" fill-rule="evenodd" clip-rule="evenodd" d="M16 0C7.2 0 0 7.2 0 16C0 23.1 4.6 29.1 10.9 31.2C11.7 31.3 12 30.9 12 30.4C12 30 12 29 12 27.7C7.5 28.7 6.6 25.6 6.6 25.6C5.9 23.8 4.8 23.3 4.8 23.3C3.3 22.3 4.9 22.3 4.9 22.3C6.5 22.4 7.4 23.9 7.4 23.9C8.8 26.3 11.1 25.6 12.1 25.2C12.2 24.2 12.7 23.5 13.1 23.1C9.5 22.7 5.8 21.3 5.8 15.2C5.8 13.5 6.4 12 7.4 10.9C7.2 10.5 6.7 8.9 7.6 6.7C7.6 6.7 8.9 6.3 12 8.3C13.3 7.9 14.6 7.8 16 7.8C17.4 7.8 18.7 8 20 8.3C23.1 6.2 24.4 6.7 24.4 6.7C25.3 8.9 24.7 10.5 24.6 10.9C25.6 12 26.2 13.4 26.2 15.2C26.2 21.3 22.5 22.7 18.9 23.1C19.5 23.6 20 24.6 20 26.1C20 28.2 20 30 20 30.5C20 30.9 20.3 31.4 21.1 31.3C27.4 29.1 32 23.1 32 16C32 7.2 24.8 0 16 0Z" fill="#444444"/>
-							</svg>
-						</a></li>
-						<li><a href="https://www.linkedin.com/in/matthewwalinga" target="_blank" aria-label="LinkedIn">
-							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path id="innerSVG" d="M16 0C7.2 0 0 7.2 0 16C0 24.8 7.2 32 16 32C24.8 32 32 24.8 32 16C32 7.2 24.8 0 16 0ZM11.6 24H8.3V13.3H11.6V24ZM9.9 11.9C8.9 11.9 8 11 8 9.9C8 8.9 8.9 8 9.9 8C11 8 11.8 8.9 11.8 9.9C11.8 11 11 11.9 9.9 11.9ZM24 24H20.7V18.8C20.7 17.6 20.7 16 19 16C17.3 16 17 17.3 17 18.7V24H13.7V13.3H16.9V14.8C17.3 14 18.4 13.1 20 13.1C23.4 13.1 24 15.3 24 18.2V24Z" fill="#444444"/>
-							</svg>
-						</a></li>
-						<li><a id="email-me" data-clipboard-text="matthew.walinga@gmail.com" aria-label="Email me">
-							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<rect width="32" height="32" fill="black" fill-opacity="0"/>
-								<path id="innerSVG" d="M16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0V0ZM8.06001 8H23.94C24.2523 8.00017 24.5599 8.07572 24.8367 8.22022C25.1135 8.36472 25.3513 8.5739 25.53 8.83L20.53 12.45L17 15L16 15.75L15 15L11.47 12.44L6.47001 8.82C6.64977 8.56575 6.8881 8.35851 7.16484 8.21578C7.44159 8.07306 7.74863 7.99905 8.06001 8ZM25.88 22.06C25.88 22.3148 25.8298 22.567 25.7323 22.8024C25.6348 23.0378 25.4919 23.2516 25.3118 23.4318C25.1316 23.6119 24.9178 23.7548 24.6824 23.8523C24.447 23.9498 24.1948 24 23.94 24H8.06001C7.80524 24 7.55297 23.9498 7.3176 23.8523C7.08223 23.7548 6.86837 23.6119 6.68822 23.4318C6.50807 23.2516 6.36517 23.0378 6.26768 22.8024C6.17019 22.567 6.12001 22.3148 6.12001 22.06V11L9.22001 13.26L14.83 17.33L15.36 17.71L15.46 17.78C15.5236 17.8253 15.5947 17.8592 15.67 17.88C15.7061 17.8889 15.7439 17.8889 15.78 17.88C15.9239 17.9201 16.0761 17.9201 16.22 17.88C16.256 17.8903 16.2941 17.8903 16.33 17.88C16.4053 17.8592 16.4764 17.8253 16.54 17.78H16.59L17.12 17.4L22.73 13.33L25.88 11V22.06Z" fill="#444444"/>
-							</svg>
-						</a></li>
-					</ul>
-					<span id="copied-prompt">Copied!</span>
-				</nav>
-			</div>
-		</header>
-		<main>
-			<div class="top-mock"></div>
-			<section>
-				<h2>A little bit about me</h2>
-				<hr>
-				<p>Hey! My name is Matthew, and I'm a software engineer at <a class="inline-link" href="https://www.indeed.com/" target="_blank">Indeed</a>. <!--Previously, I've written code at
-					<a class="inline-link" href="https://yext.com/" target="_blank">Yext</a> and
-					<a class="inline-link" href="https://cloud.google.com/" target="_blank"> Google</a>.
-					 I graduated from the <a class="inline-link" href="https://www.reddit.com/r/uwaterloo/" target="_blank">University of Waterloo</a> with a degree in Computer Science <span id="dayCounter">3</span> days ago. Here’s my
-					<a class="inline-link" href="resume.pdf" target="_blank">resume</a>, and here’s some stuff not on my resume:
-					<br/><br/>
-					🐶 &nbsp;My dog looks extremely similar to the dog emoji<br/>
-					🥖 &nbsp;Fell asleep on a bench in front of the Eiffel Tower<br/>
-					🐎 &nbsp;Learned to ride a horse during a snowstorm<br/>
-					♚ &nbsp;Ranked in the top 5% of users on chess.com</p>-->
-			</section>
-			<section>
-				<h2>What I've been working on</h2>
-				<hr>
-				<article class="project">
-					<div class="project-desc">
-						<span id="open-source" class="project-name">📖 Open Source </span>
-					</div>
-					<p>I enjoy helping out open source communities and making improvements to software that I use. I've contributed to
-						<a class="inline-link" href="https://github.com/ornicar/lila" target="_blank" aria-describedby="open-source">lichess.org</a>,
-						<a class="inline-link" href="https://github.com/rust-lang/rust" target="_blank" aria-describedby="open-source">Rust</a>,
-						<a class="inline-link" href="https://github.com/rubocop-hq/rubocop" target="_blank" aria-describedby="open-source">Rubocop</a>, and
-						<a class="inline-link" href="https://github.com/Homebrew/homebrew-core" target="_blank" aria-describedby="open-source">Homebrew</a>.
-					</p>
-				</article>
-				<!--<article class="project">
-					<div class="project-desc">
-						<span id="stratego" class="project-name">🐉 Stratego </span>
-						<a href="https://github.com/walinga/Stratego-Front-End" target="_blank" aria-describedby="stratego">Github</a>
-						<a href="https://stratego-front-end.herokuapp.com/" target="_blank" aria-describedby="stratego">Play it now</a>
-					</div>
-					<p>A turn-based 2-player strategy game built with a <b>Java backend</b> and <b>React frontend</b>. The website is hosted on 2 <b>Heroku</b> servers (one frontend, one backend), with a simple API bridging the gap between React and Java code. The graphics for the game incorporate relevant emojis as icons for the different pieces.</p>
-				</article>
-				<article class="project">
-					<div class="project-desc">
-						<span id="double-u" class="project-name">💎 Double-U </span>
-						<a href="https://github.com/walinga/Double-U" target="_blank" aria-describedby="double-u">Github</a>
-						<a href="https://repl.it/@MatthewWalinga/Double-U" target="_blank" aria-describedby="double-u">Try it Online</a>
-					</div>
-					<p>A non-deterministic <b>programming language, written in Ruby</b> that performs various statistical operations on large data sets. The language is command-based and includes a <b>fully-working REPL</b> for user convenience. Most of the commands have some component of randomization, allowing for quirky and interesting behaviour.</p>
-				</article>
-				<article class="project">
-					<div class="project-desc">
-						<span id="read-ar" class="project-name">👑 ReadAR </span>
-						<a href="https://github.com/suoken/readAR" target="_blank" aria-describedby="read-ar">Github</a>
-					</div>
-					<p>A web app designed to reimagine the early childhood reading experience. By using <b>tracking.js</b> to create <b>AR face filters</b>, children can become the characters from the story, while improving their reading abilities. I also implemented a feature to determine if the child is reading the text correctly using <b>Cloud Speech-to-Text </b> technology.</p>
-				</article>
-				<article class="project">
-					<div class="project-desc">
-						<span id="chess-bot" class="project-name">🏁 Chess bot </span>
-						<a href="https://github.com/walinga/Chess-Game" target="_blank" aria-describedby="chess-bot">Github</a>
-					</div>
-					<p>A sophisticated chess program that uses <b>minimax</b> and <b>alpha-beta pruning</b> to decide on the best move. <b>Written from scratch in python</b>, this bot uses chess-based heuristics to augment the minimax backbone. The program can beat almost any casual player using the default settings. The UI features a captured-piece visual, as well as the ability to undo played moves.</p>
-				</article>
-				<article class="project">
-					<div class="project-desc">
-						<span id="quadris" class="project-name">👾 Quadris </span>
-						<a href="https://github.com/walinga/Quadris" target="_blank" aria-describedby="quadris">Github</a>
-					</div>
-					<p>A Tetris game built using <b>C++</b> by me and two friends. The game features a hint and an auto-saved high score. There are 4 levels of increasing difficulty, varying from beginner to insanely difficult.</p>
-				</article>-->
-				<hr class="footer-rule">
-				<div class="footer">
-					<h2 class="footer-title">Thanks for dropping by!</h2>
-					<p class="footer-email">matthew.walinga@gmail.com</p>
-				</div>
-			</section>
-		</main>
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff6b6b;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
 
-		<script src="./node_modules/clipboard/dist/clipboard.min.js"></script>
-		<script src="./my-clipboard.js"></script>
-		<script src="./counter.js"></script>
-	</body>
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b6b;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="grad1"><stop offset="0%" style="stop-color:rgba(255,107,107,0.1)"/><stop offset="100%" style="stop-color:rgba(255,107,107,0)"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23grad1)"/><circle cx="800" cy="400" r="150" fill="url(%23grad1)"/><circle cx="300" cy="700" r="120" fill="url(%23grad1)"/></svg>') no-repeat center center;
+            background-size: cover;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-20px) rotate(1deg); }
+            66% { transform: translateY(10px) rotate(-1deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: slideUp 1s ease-out;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            color: #ff6b6b;
+            margin-bottom: 1rem;
+            animation: slideUp 1s ease-out 0.2s both;
+        }
+
+        .hero .location {
+            font-size: 1.2rem;
+            color: #cccccc;
+            margin-bottom: 2rem;
+            animation: slideUp 1s ease-out 0.4s both;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: slideUp 1s ease-out 0.6s both;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
+        }
+
+        /* Sections */
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #ff6b6b;
+        }
+
+        /* About Section */
+        .about {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .about-image {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+            margin: 0 auto;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255, 107, 107, 0.2);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 107, 107, 0.1);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #ff6b6b;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-image {
+            height: 200px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .portfolio-content {
+            padding: 1.5rem;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+            line-height: 2;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #cccccc;
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(15, 15, 35, 0.9);
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(255, 107, 107, 0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">David Walinga</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>David Walinga</h1>
+                <p class="subtitle">Filmographer & Visual Storyteller</p>
+                <p class="location">📍 Toronto, Ontario</p>
+                <a href="#contact" class="cta-button">Let's Create Together</a>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🎥</div>
+                        <h3>Documentary Films</h3>
+                        <p>Compelling documentary storytelling that captures authentic moments and real human experiences with cinematic quality.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🏢</div>
+                        <h3>Corporate Videos</h3>
+                        <p>Professional corporate content that elevates your brand message through engaging visual storytelling and polished production.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎭</div>
+                        <h3>Short Films</h3>
+                        <p>Artistic short films that explore creative narratives, perfect for festivals, portfolios, and artistic expression.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📺</div>
+                        <h3>Commercial Work</h3>
+                        <p>High-impact commercial content that drives results, from product showcases to brand campaigns with Toronto flair.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎪</div>
+                        <h3>Event Coverage</h3>
+                        <p>Dynamic event documentation that captures the energy and emotion of your special occasions and corporate gatherings.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">✂️</div>
+                        <h3>Post-Production</h3>
+                        <p>Complete post-production services including editing, color grading, and sound design to perfect your vision.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">Recent Work</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">🌃</div>
+                        <div class="portfolio-content">
+                            <h3>Toronto After Dark</h3>
+                            <p>A cinematic exploration of Toronto's nightlife, capturing the city's vibrant energy through intimate portraits and stunning cityscapes.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">🏭</div>
+                        <div class="portfolio-content">
+                            <h3>Innovation Hub Documentary</h3>
+                            <p>Corporate documentary showcasing Toronto's tech ecosystem, featuring interviews with entrepreneurs and startup founders.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">🎨</div>
+                        <div class="portfolio-content">
+                            <h3>Artist Collective Short</h3>
+                            <p>An artistic short film following local Toronto artists as they collaborate on a community mural project in Kensington Market.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">🍁</div>
+                        <div class="portfolio-content">
+                            <h3>Seasons of the Six</h3>
+                            <p>Time-lapse documentary capturing Toronto's transformation through the four seasons, from the CNE to winter wonderlands.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+		<section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <div class="about-content">
+                    <div class="about-image">🎬</div>
+                    <div class="about-text">
+                        <p>Passionate filmmaker based in the heart of Toronto, I bring stories to life through the lens of creativity and technical excellence. With years of experience in cinematography, I specialize in capturing authentic moments and crafting compelling visual narratives.</p>
+                        <br>
+                        <p>From corporate documentaries to artistic short films, I work closely with clients to transform their vision into stunning visual experiences. My approach combines technical precision with artistic intuition, ensuring every frame tells a meaningful story.</p>
+                        <br>
+                        <p>When I'm not behind the camera, you can find me exploring Toronto's diverse neighborhoods, always seeking new perspectives and stories waiting to be told.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Discuss Your Project</h3>
+                        <p>Ready to bring your vision to life? I'd love to hear about your project and explore how we can create something extraordinary together.</p>
+                        <br>
+                        <p>📧 <strong>Email:</strong> davidwalinga51@gmail.com</p>
+                        <p>📱 <strong>Phone:</strong> (519) 240-7392</p>
+                        <p>📍 <strong>Location:</strong> Toronto, Ontario</p>
+                        <p>🌐 <strong>Service Area:</strong> GTA & Surrounding Regions</p>
+                        <br>
+                        <p>Available for projects throughout Toronto, the Greater Toronto Area, and beyond. Travel accommodations available for destination projects.</p>
+                    </div>
+					<!-- TODO: Replace with davidwalinga51@gmail.com -->
+                    <form class="contact-form" action="https://formsubmit.co/matthew.walinga@gmail.com" method="POST">
+						<input type="hidden" name="_subject" value="New inquiry from Walinga Films website">
+						<input type="hidden" name="_captcha" value="false">
+						<input type="hidden" name="_template" value="table">
+                        <input type="text" name="name" placeholder="Your Name" required>
+						<input type="email" name="email" placeholder="Email Address" required>
+						<input type="tel" name="phone" placeholder="Phone Number">
+						<input type="text" name="project" placeholder="Project Type">
+						<textarea name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 David Walinga Filmography. All rights reserved. | Based in Toronto, Ontario</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background change on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 15, 35, 0.98)';
+            } else {
+                header.style.background = 'rgba(15, 15, 35, 0.95)';
+            }
+        });
+
+        // Contact form handling
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I\'ll get back to you within 24 hours.');
+            this.reset();
+        });
+
+        // Add subtle parallax effect to hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+    </script>
+</body>
 </html>
